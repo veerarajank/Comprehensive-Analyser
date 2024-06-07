@@ -6,6 +6,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 import ssl
+import os
 
 try:
     _create_unverified_https_context = ssl._create_unverified_context
@@ -81,6 +82,7 @@ def generate_signals(sentiment_scores, threshold=0.05):
     return signal
 
 def SentimentAnalysis(Company):
+    api_key = os.getenv('NEWS_API_KEY')
     from_date = (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d')
     to_date = datetime.now().strftime('%Y-%m-%d')
      # Get news articles
