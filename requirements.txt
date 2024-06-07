@@ -1,0 +1,15 @@
+groq
+yfinance
+dotenv
+os
+requests
+bs4
+nltk
+pandas
+matplotlib
+datetime
+ssl
+pandas_ta
+langgraph
+typing
+streamlit
