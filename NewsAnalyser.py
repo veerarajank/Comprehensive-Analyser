@@ -81,7 +81,6 @@ def generate_signals(sentiment_scores, threshold=0.05):
     return signal
 
 def SentimentAnalysis(Company):
-    api_key = 'a1cd39cdca034e529a2c0c67de2dd7c2'  # Replace with your NewsAPI key
     from_date = (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d')
     to_date = datetime.now().strftime('%Y-%m-%d')
      # Get news articles
@@ -97,7 +96,6 @@ def SentimentAnalysis(Company):
     return {"average_sentiment_score": avg_sentiment, "recommendation": generate_signals(sentiment_scores)}
 # Main function
 # def main():
-#     api_key = 'a1cd39cdca034e529a2c0c67de2dd7c2'  # Replace with your NewsAPI key
 #     company = 'NFG'
 #     from_date = (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d')
 #     to_date = datetime.now().strftime('%Y-%m-%d')
