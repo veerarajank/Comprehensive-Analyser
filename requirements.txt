@@ -7,7 +7,6 @@ nltk
 pandas
 matplotlib
 datetime
-ssl
 pandas_ta
 langgraph
 typing
