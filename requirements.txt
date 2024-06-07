@@ -1,6 +1,6 @@
 groq
 yfinance
-dotenv
+python-dotenv
 os
 requests
 bs4
