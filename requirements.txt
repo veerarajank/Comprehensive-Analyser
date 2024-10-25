@@ -11,3 +11,4 @@ pandas_ta
 langgraph
 typing
 streamlit
+numpy==1.26.4
