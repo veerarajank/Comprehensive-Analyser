@@ -36,7 +36,7 @@ def llm(role, user_input):
     new_message.append({"role": "user", "content": user_input})
     response = client.chat.completions.create(model="llama3-70b-8192",
                                             messages=new_message,
-                                            max_tokens=32768,
+                                            max_tokens=8192,
                                             temperature=1.2)
     new_message.append({
       "role": "assistant",
